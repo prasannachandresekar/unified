@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Details - HubFlow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Hub<span>Flow</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <i class="bi bi-list fs-4" style="color:var(--text-primary)"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
+            <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+            <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+            <li><a class="dropdown-item" href="community.html">Community</a></li>
+            <li><a class="dropdown-item" href="client-portal.html">Client Portal</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2">
+        <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+        <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+        <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-end" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title"><a class="navbar-brand" href="index.html">Hub<span>Flow</span></a></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+      <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+      <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+      <li class="nav-item"><a class="nav-link" href="client-portal.html">Client Portal</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+      <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="d-flex gap-2 mt-3">
+      <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+      <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+      <button class="theme-toggle" id="themeToggleMobile"><i class="bi bi-moon-fill" id="themeIconMobile"></i></button>
+    </div>
+  </div>
+</div>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Service Details</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+        <li class="breadcrumb-item active">Marketing Hub</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="badge bg-brand-light text-brand fw-semibold px-3 py-2 mb-3">Marketing Hub</span>
+        <h2 class="section-title">Supercharge Your Marketing with Intelligent Automation</h2>
+        <p class="text-muted-custom">HubFlow's Marketing Hub brings together email campaigns, social media management, SEO tools, and analytics in one powerful platform. Drive more traffic, convert more leads, and prove ROI with ease.</p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="register.html" class="btn btn-brand">Start Free Trial</a>
+          <a href="contact.html" class="btn btn-outline-brand">Request Demo</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card-custom p-4" style="background: linear-gradient(135deg, rgba(255,92,53,0.08) 0%, rgba(0,189,165,0.08) 100%);">
+          <div class="text-center py-5">
+            <i class="bi bi-megaphone-fill" style="font-size: 5rem; color: var(--brand-primary);"></i>
+            <p class="mt-3 fw-semibold" style="color: var(--text-secondary);">Marketing Hub Dashboard</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" style="background-color: var(--bg-secondary);">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Key Features</h2>
+      <p class="section-subtitle">Everything you need to run world-class marketing campaigns</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body">
+            <div class="icon-box primary"><i class="bi bi-envelope-paper-fill"></i></div>
+            <h5>Email Campaigns</h5>
+            <p class="text-muted-custom small">Design, send, and track beautiful email campaigns with our drag-and-drop editor. A/B test subject lines and optimize deliverability.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body">
+            <div class="icon-box secondary"><i class="bi bi-share-fill"></i></div>
+            <h5>Social Media Management</h5>
+            <p class="text-muted-custom small">Schedule posts, monitor engagement, and manage all your social channels from a single dashboard with real-time analytics.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body">
+            <div class="icon-box info"><i class="bi bi-search"></i></div>
+            <h5>SEO Toolkit</h5>
+            <p class="text-muted-custom small">Optimize your content for search engines with keyword research, on-page analysis, backlink tracking, and competitor monitoring.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body">
+            <div class="icon-box warning"><i class="bi bi-graph-up-arrow"></i></div>
+            <h5>Analytics & Reporting</h5>
+            <p class="text-muted-custom small">Get comprehensive insights into campaign performance with customizable dashboards, attribution modeling, and ROI tracking.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body">
+            <div class="icon-box primary"><i class="bi bi-robot"></i></div>
+            <h5>Marketing Automation</h5>
+            <p class="text-muted-custom small">Create sophisticated workflows that nurture leads, trigger personalized messages, and automate repetitive tasks effortlessly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body">
+            <div class="icon-box secondary"><i class="bi bi-people-fill"></i></div>
+            <h5>Lead Management</h5>
+            <p class="text-muted-custom small">Capture, score, and manage leads with smart forms, landing pages, and CRM integration to accelerate your sales pipeline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Get started in three simple steps</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 text-center">
+        <div class="card-custom p-4 h-100">
+          <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:64px;height:64px;background:var(--brand-primary);color:#fff;font-size:1.5rem;font-weight:800;">1</div>
+          <h5>Connect Your Channels</h5>
+          <p class="text-muted-custom small">Link your email provider, social media accounts, and website in minutes. Our guided setup walks you through every integration.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+        <div class="card-custom p-4 h-100">
+          <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:64px;height:64px;background:var(--brand-secondary);color:#fff;font-size:1.5rem;font-weight:800;">2</div>
+          <h5>Build Your Campaigns</h5>
+          <p class="text-muted-custom small">Use our drag-and-drop builder to create email sequences, social posts, and landing pages. Choose from 100+ proven templates.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+        <div class="card-custom p-4 h-100">
+          <div class="rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width:64px;height:64px;background:#4285f4;color:#fff;font-size:1.5rem;font-weight:800;">3</div>
+          <h5>Analyze & Optimize</h5>
+          <p class="text-muted-custom small">Track results in real time, identify what works, and let our AI-powered recommendations help you continuously improve performance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" style="background-color: var(--bg-secondary);">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Marketing Hub Pricing</h2>
+      <p class="section-subtitle">Choose the plan that fits your marketing needs</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card-custom">
+          <div class="table-responsive">
+            <table class="table table-striped mb-0">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th class="text-center">Starter</th>
+                  <th class="text-center">Professional</th>
+                  <th class="text-center">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Email Campaigns</td>
+                  <td class="text-center">1,000/mo</td>
+                  <td class="text-center">25,000/mo</td>
+                  <td class="text-center">Unlimited</td>
+                </tr>
+                <tr>
+                  <td>Social Channels</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">Unlimited</td>
+                </tr>
+                <tr>
+                  <td>Landing Pages</td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">50</td>
+                  <td class="text-center">Unlimited</td>
+                </tr>
+                <tr>
+                  <td>SEO Keywords</td>
+                  <td class="text-center">50</td>
+                  <td class="text-center">500</td>
+                  <td class="text-center">Unlimited</td>
+                </tr>
+                <tr>
+                  <td>Automation Workflows</td>
+                  <td class="text-center"><i class="bi bi-x-circle text-danger"></i></td>
+                  <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                  <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                </tr>
+                <tr>
+                  <td>AI Recommendations</td>
+                  <td class="text-center"><i class="bi bi-x-circle text-danger"></i></td>
+                  <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                  <td class="text-center"><i class="bi bi-check-circle-fill text-success"></i></td>
+                </tr>
+                <tr>
+                  <td class="fw-semibold">Price</td>
+                  <td class="text-center fw-bold">$29/mo</td>
+                  <td class="text-center fw-bold text-brand">$79/mo</td>
+                  <td class="text-center fw-bold">$199/mo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="pricing.html" class="btn btn-brand">View Full Pricing</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Related Services</h2>
+      <p class="section-subtitle">Explore more tools to power your business</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body text-center">
+            <div class="icon-box secondary mx-auto"><i class="bi bi-cart-fill"></i></div>
+            <h5>Sales Hub</h5>
+            <p class="text-muted-custom small">Manage your pipeline, track deals, and close more revenue with intelligent sales automation and CRM tools.</p>
+            <a href="service-details.html" class="btn btn-outline-brand btn-sm mt-2">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body text-center">
+            <div class="icon-box info mx-auto"><i class="bi bi-headset"></i></div>
+            <h5>Support Hub</h5>
+            <p class="text-muted-custom small">Deliver exceptional customer service with ticketing, live chat, knowledge base, and customer feedback tools.</p>
+            <a href="service-details.html" class="btn btn-outline-brand btn-sm mt-2">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card-custom h-100">
+          <div class="card-body text-center">
+            <div class="icon-box warning mx-auto"><i class="bi bi-bar-chart-line-fill"></i></div>
+            <h5>Analytics Hub</h5>
+            <p class="text-muted-custom small">Unify all your data with advanced reporting, custom dashboards, and predictive analytics powered by AI.</p>
+            <a href="service-details.html" class="btn btn-outline-brand btn-sm mt-2">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container text-center">
+    <h2 class="mb-3">Ready to Transform Your Marketing?</h2>
+    <p class="mb-4" style="opacity:0.9;">Start your 14-day free trial today. No credit card required.</p>
+    <a href="register.html" class="btn btn-lg px-5">Get Started Free</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <h5>Hub<span style="color:var(--brand-primary)">Flow</span></h5>
+        <p class="small">Empowering businesses with modern SaaS tools to grow, manage, and scale effortlessly.</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+          <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+          <a href="#"><i class="bi bi-github fs-5"></i></a>
+          <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="about.html">About Us</a></li>
+          <li class="mb-2"><a href="services.html">Services</a></li>
+          <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+          <li class="mb-2"><a href="blog.html">Blog</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Support</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#">Help Center</a></li>
+          <li class="mb-2"><a href="#">Documentation</a></li>
+          <li class="mb-2"><a href="#">API Reference</a></li>
+          <li class="mb-2"><a href="#">Status Page</a></li>
+          <li class="mb-2"><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Newsletter</h5>
+        <p class="small">Stay updated with our latest features and releases.</p>
+        <form class="d-flex gap-2">
+          <input type="email" class="form-control form-control-sm" placeholder="Your email">
+          <button type="button" class="btn btn-brand btn-sm">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p class="small mb-0">&copy; 2026 HubFlow. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

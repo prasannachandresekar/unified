@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - HubFlow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Hub<span>Flow</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <i class="bi bi-list fs-4" style="color:var(--text-primary)"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+              <li><a class="dropdown-item" href="community.html">Community</a></li>
+              <li><a class="dropdown-item" href="client-portal.html">Client Portal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+          <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+          <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><a class="navbar-brand" href="index.html">Hub<span>Flow</span></a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+        <li class="nav-item"><a class="nav-link" href="client-portal.html">Client Portal</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+      <div class="d-flex gap-2 mt-3">
+        <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+        <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+        <button class="theme-toggle" id="themeToggleMobile"><i class="bi bi-moon-fill"
+            id="themeIconMobile"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h1 class="mb-2">Admin Dashboard</h1>
+            <p class="mb-0 text-muted">
+              Monitor platform activity, manage users, and keep HubFlow running smoothly.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="#" class="btn btn-primary">
+              <i class="bi bi-gear me-2"></i>Admin Settings
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Admin Stats -->
+        <div class="row g-4 mb-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="text-muted small">Total Users</div>
+                    <h3 class="mb-0">1,284</h3>
+                  </div>
+                  <i class="bi bi-people text-muted"></i>
+                </div>
+                <div class="text-muted small mt-2">+42 this week</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="text-muted small">Bookings</div>
+                    <h3 class="mb-0">392</h3>
+                  </div>
+                  <i class="bi bi-calendar-check text-muted"></i>
+                </div>
+                <div class="text-muted small mt-2">+18 today</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="text-muted small">Orders</div>
+                    <h3 class="mb-0">1,052</h3>
+                  </div>
+                  <i class="bi bi-bag-check text-muted"></i>
+                </div>
+                <div class="text-muted small mt-2">₹2.4L this month</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="text-muted small">Active Courses</div>
+                    <h3 class="mb-0">34</h3>
+                  </div>
+                  <i class="bi bi-mortarboard text-muted"></i>
+                </div>
+                <div class="text-muted small mt-2">+3 added recently</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Users Table -->
+          <div class="col-lg-7">
+            <div class="card shadow-sm border-0 rounded-4 h-100">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h5 class="mb-0">Recent Users</h5>
+                  <a href="#" class="text-decoration-none">View all</a>
+                </div>
+
+                <div class="table-responsive">
+                  <table class="table align-middle mb-0">
+                    <thead>
+                      <tr class="text-muted">
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th class="text-end">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aarav Menon</td>
+                        <td>aarav@email.com</td>
+                        <td>Admin</td>
+                        <td><span class="badge rounded-pill text-bg-success">Active</span></td>
+                        <td class="text-end">
+                          <button class="btn btn-sm btn-outline">Manage</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Sneha Iyer</td>
+                        <td>sneha@email.com</td>
+                        <td>Manager</td>
+                        <td><span class="badge rounded-pill text-bg-success">Active</span></td>
+                        <td class="text-end">
+                          <button class="btn btn-sm btn-outline">Manage</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Vikram Rao</td>
+                        <td>vikram@email.com</td>
+                        <td>Member</td>
+                        <td><span class="badge rounded-pill text-bg-warning">Pending</span></td>
+                        <td class="text-end">
+                          <button class="btn btn-sm btn-outline">Invite</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Neha Sharma</td>
+                        <td>neha@email.com</td>
+                        <td>Member</td>
+                        <td><span class="badge rounded-pill text-bg-danger">Suspended</span></td>
+                        <td class="text-end">
+                          <button class="btn btn-sm btn-outline">Review</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity + Alerts -->
+          <div class="col-lg-5">
+            <div class="d-grid gap-4">
+              <!-- Activity -->
+              <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="mb-0">Recent Activity</h5>
+                    <a href="#" class="text-decoration-none">All logs</a>
+                  </div>
+
+                  <div class="d-grid gap-3">
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div>
+                        <strong>New booking created</strong>
+                        <div class="text-muted small">by Sneha Iyer</div>
+                      </div>
+                      <div class="text-muted small">10m</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div>
+                        <strong>New order placed</strong>
+                        <div class="text-muted small">₹1,299 • Shop</div>
+                      </div>
+                      <div class="text-muted small">42m</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div>
+                        <strong>New course published</strong>
+                        <div class="text-muted small">“Sales Mastery 101”</div>
+                      </div>
+                      <div class="text-muted small">2h</div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-start">
+                      <div>
+                        <strong>User role updated</strong>
+                        <div class="text-muted small">Member → Manager</div>
+                      </div>
+                      <div class="text-muted small">Yesterday</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Alerts -->
+              <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body p-4">
+                  <h5 class="mb-2">Admin Alerts</h5>
+                  <p class="text-muted mb-3">
+                    Quick actions to keep HubFlow stable and secure.
+                  </p>
+
+                  <div class="d-grid gap-3">
+                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-4">
+                      <div>
+                        <strong>Pending approvals</strong>
+                        <div class="text-muted small">3 users waiting</div>
+                      </div>
+                      <button class="btn btn-sm btn-primary">Review</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-4">
+                      <div>
+                        <strong>Payment reconciliation</strong>
+                        <div class="text-muted small">2 payouts pending</div>
+                      </div>
+                      <button class="btn btn-sm btn-outline">Open</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center p-3 border rounded-4">
+                      <div>
+                        <strong>Security scan</strong>
+                        <div class="text-muted small">Recommended weekly</div>
+                      </div>
+                      <button class="btn btn-sm btn-outline">Run</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5>Hub<span style="color:var(--brand-primary)">Flow</span></h5>
+          <p class="small">Empowering businesses with modern SaaS tools to grow, manage, and scale effortlessly.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+            <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+            <a href="#"><i class="bi bi-github fs-5"></i></a>
+            <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="services.html">Services</a></li>
+            <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+            <li class="mb-2"><a href="blog.html">Blog</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Help Center</a></li>
+            <li class="mb-2"><a href="#">Documentation</a></li>
+            <li class="mb-2"><a href="#">API Reference</a></li>
+            <li class="mb-2"><a href="#">Status Page</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Newsletter</h5>
+          <p class="small">Stay updated with our latest features and releases.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control form-control-sm" placeholder="Your email">
+            <button type="button" class="btn btn-brand btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="small mb-0">&copy; 2026 HubFlow. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

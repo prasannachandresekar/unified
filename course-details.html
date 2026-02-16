@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details - HubFlow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Hub<span>Flow</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+      <i class="bi bi-list fs-4" style="color:var(--text-primary)"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
+            <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+            <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+            <li><a class="dropdown-item" href="community.html">Community</a></li>
+            <li><a class="dropdown-item" href="client-portal.html">Client Portal</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-2">
+        <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+        <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+        <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-end" id="mobileMenu">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title"><a class="navbar-brand" href="index.html">Hub<span>Flow</span></a></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+      <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+      <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+      <li class="nav-item"><a class="nav-link" href="client-portal.html">Client Portal</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+      <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+    </ul>
+    <div class="d-flex gap-2 mt-3">
+      <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+      <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+      <button class="theme-toggle" id="themeToggleMobile"><i class="bi bi-moon-fill" id="themeIconMobile"></i></button>
+    </div>
+  </div>
+</div>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Course Details</h1>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+        <li class="breadcrumb-item active">Course Details</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="course-img mb-4" style="background:linear-gradient(135deg,#00bda5,#00e6c8);height:300px;border-radius:0.75rem;display:flex;align-items:center;justify-content:center;color:#fff;font-size:4rem">
+          <i class="bi bi-megaphone"></i>
+        </div>
+
+        <span class="badge" style="background:#00bda5;color:#fff">Marketing</span>
+        <h2 class="mt-2 mb-3">Complete SaaS Marketing Masterclass</h2>
+
+        <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+          <div class="d-flex align-items-center gap-2">
+            <div class="avatar">SC</div>
+            <div>
+              <small class="text-muted-custom">Instructor</small>
+              <p class="mb-0 fw-semibold small">Sarah Chen</p>
+            </div>
+          </div>
+          <div>
+            <span style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <small class="text-muted-custom">4.8 (528 reviews)</small>
+          </div>
+          <div class="small text-muted-custom"><i class="bi bi-people me-1"></i>4,210 students</div>
+          <div class="small text-muted-custom"><i class="bi bi-clock me-1"></i>36 hours</div>
+          <div class="small text-muted-custom"><i class="bi bi-calendar me-1"></i>Last updated Feb 2026</div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 mb-4">
+          <span class="fw-bold fs-3 text-brand">$79.00</span>
+          <span class="text-decoration-line-through text-muted-custom fs-5">$149.00</span>
+          <span class="badge badge-success">47% OFF</span>
+        </div>
+        <button class="btn btn-brand btn-lg mb-4"><i class="bi bi-play-circle me-2"></i>Enroll Now</button>
+
+        <h4 class="mb-3">Course Overview</h4>
+        <p class="text-muted-custom mb-4">Master the art and science of SaaS marketing with this comprehensive course. From customer acquisition to retention strategies, learn proven frameworks used by top SaaS companies to drive sustainable growth. This course covers everything from building your marketing foundation to advanced growth hacking techniques, with real-world case studies from companies like HubSpot, Slack, and Notion.</p>
+
+        <h4 class="mb-3">What You'll Learn</h4>
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <div class="d-flex gap-2 align-items-start">
+              <i class="bi bi-check-circle-fill text-brand mt-1"></i>
+              <span>Build a complete SaaS marketing strategy from scratch</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex gap-2 align-items-start">
+              <i class="bi bi-check-circle-fill text-brand mt-1"></i>
+              <span>Master content marketing and SEO for SaaS products</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex gap-2 align-items-start">
+              <i class="bi bi-check-circle-fill text-brand mt-1"></i>
+              <span>Create high-converting landing pages and funnels</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex gap-2 align-items-start">
+              <i class="bi bi-check-circle-fill text-brand mt-1"></i>
+              <span>Implement product-led growth strategies</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex gap-2 align-items-start">
+              <i class="bi bi-check-circle-fill text-brand mt-1"></i>
+              <span>Run effective paid advertising campaigns</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex gap-2 align-items-start">
+              <i class="bi bi-check-circle-fill text-brand mt-1"></i>
+              <span>Optimize customer onboarding and retention</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex gap-2 align-items-start">
+              <i class="bi bi-check-circle-fill text-brand mt-1"></i>
+              <span>Leverage email marketing automation at scale</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex gap-2 align-items-start">
+              <i class="bi bi-check-circle-fill text-brand mt-1"></i>
+              <span>Analyze metrics and build data-driven campaigns</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="mb-3">Curriculum</h4>
+        <div class="accordion mb-4" id="curriculumAccordion">
+          <div class="accordion-item" style="background:var(--bg-card);border-color:var(--border-color)">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#module1" style="background:var(--bg-card);color:var(--text-primary)">
+                <strong>Module 1: SaaS Marketing Foundations</strong>
+                <span class="badge bg-secondary ms-auto me-2">4 Lessons</span>
+              </button>
+            </h2>
+            <div id="module1" class="accordion-collapse collapse show" data-bs-parent="#curriculumAccordion">
+              <div class="accordion-body" style="background:var(--bg-card)">
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-unlock me-2 text-brand"></i>Introduction to SaaS Marketing</span>
+                    <span class="small text-muted-custom">12:30</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-unlock me-2 text-brand"></i>Understanding the SaaS Buyer Journey</span>
+                    <span class="small text-muted-custom">18:45</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-unlock me-2 text-brand"></i>Building Your ICP and Personas</span>
+                    <span class="small text-muted-custom">22:10</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2">
+                    <span><i class="bi bi-unlock me-2 text-brand"></i>Competitive Analysis Framework</span>
+                    <span class="small text-muted-custom">15:20</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="background:var(--bg-card);border-color:var(--border-color)">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module2" style="background:var(--bg-card);color:var(--text-primary)">
+                <strong>Module 2: Content & SEO Strategy</strong>
+                <span class="badge bg-secondary ms-auto me-2">3 Lessons</span>
+              </button>
+            </h2>
+            <div id="module2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+              <div class="accordion-body" style="background:var(--bg-card)">
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Content Marketing for SaaS</span>
+                    <span class="small text-muted-custom">28:15</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>SEO Strategy & Keyword Research</span>
+                    <span class="small text-muted-custom">34:20</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Building a Content Distribution Engine</span>
+                    <span class="small text-muted-custom">25:40</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="background:var(--bg-card);border-color:var(--border-color)">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module3" style="background:var(--bg-card);color:var(--text-primary)">
+                <strong>Module 3: Growth & Acquisition</strong>
+                <span class="badge bg-secondary ms-auto me-2">4 Lessons</span>
+              </button>
+            </h2>
+            <div id="module3" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+              <div class="accordion-body" style="background:var(--bg-card)">
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Product-Led Growth Strategies</span>
+                    <span class="small text-muted-custom">30:10</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Paid Acquisition Channels</span>
+                    <span class="small text-muted-custom">26:45</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Referral & Viral Loop Programs</span>
+                    <span class="small text-muted-custom">20:30</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Partnership & Co-marketing</span>
+                    <span class="small text-muted-custom">18:55</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item" style="background:var(--bg-card);border-color:var(--border-color)">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#module4" style="background:var(--bg-card);color:var(--text-primary)">
+                <strong>Module 4: Retention & Analytics</strong>
+                <span class="badge bg-secondary ms-auto me-2">3 Lessons</span>
+              </button>
+            </h2>
+            <div id="module4" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+              <div class="accordion-body" style="background:var(--bg-card)">
+                <ul class="list-unstyled mb-0">
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Customer Onboarding Optimization</span>
+                    <span class="small text-muted-custom">24:30</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2" style="border-bottom:1px solid var(--border-color)">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Churn Prevention & Win-back Campaigns</span>
+                    <span class="small text-muted-custom">22:15</span>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center py-2">
+                    <span><i class="bi bi-lock me-2 text-muted-custom"></i>Marketing Analytics & KPI Dashboards</span>
+                    <span class="small text-muted-custom">28:40</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="mb-3">Your Progress</h4>
+        <div class="card-custom mb-4">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="fw-semibold">Course Completion</span>
+              <span class="fw-bold text-brand">65%</span>
+            </div>
+            <div class="progress" style="height:10px">
+              <div class="progress-bar" role="progressbar" style="width:65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="d-flex justify-content-between mt-2 small text-muted-custom">
+              <span>9 of 14 lessons completed</span>
+              <span>~5 hours remaining</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card-custom mb-4">
+          <div class="card-body">
+            <h5 class="mb-3">About the Instructor</h5>
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="avatar avatar-lg">SC</div>
+              <div>
+                <h6 class="mb-0">Sarah Chen</h6>
+                <small class="text-muted-custom">SaaS Marketing Expert</small>
+              </div>
+            </div>
+            <p class="small text-muted-custom mb-3">Sarah is a seasoned SaaS marketing professional with over 12 years of experience. She has led growth teams at 3 unicorn startups and helped scale ARR from $1M to $50M+. Previously VP of Marketing at CloudScale and Growth Lead at DataFlow.</p>
+            <div class="d-flex gap-3 small text-muted-custom">
+              <span><i class="bi bi-people me-1"></i>18,420 students</span>
+              <span><i class="bi bi-star me-1"></i>4.8 avg rating</span>
+            </div>
+            <div class="d-flex gap-3 small text-muted-custom mt-1">
+              <span><i class="bi bi-play-circle me-1"></i>6 courses</span>
+              <span><i class="bi bi-award me-1"></i>Verified Expert</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-custom mb-4">
+          <div class="card-body">
+            <h5 class="mb-3">Course Includes</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-play-circle text-brand"></i><span class="small">36 hours on-demand video</span></li>
+              <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-file-earmark-text text-brand"></i><span class="small">24 downloadable resources</span></li>
+              <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-phone text-brand"></i><span class="small">Access on mobile and TV</span></li>
+              <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-infinity text-brand"></i><span class="small">Full lifetime access</span></li>
+              <li class="d-flex align-items-center gap-2 mb-2"><i class="bi bi-patch-check text-brand"></i><span class="small">Certificate of completion</span></li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-chat-dots text-brand"></i><span class="small">Community forum access</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <h5 class="mb-3">Related Courses</h5>
+        <div class="card-custom mb-3 course-card">
+          <div class="course-img" style="background:linear-gradient(135deg,#ff5c35,#ff8c6b);height:120px">
+            <i class="bi bi-code-slash" style="font-size:2rem"></i>
+          </div>
+          <div class="card-body">
+            <h6 class="mb-1">Full-Stack SaaS Development</h6>
+            <div class="d-flex justify-content-between align-items-center">
+              <span style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733; <small class="text-muted-custom">4.9</small></span>
+              <span class="fw-bold text-brand">$89.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-custom mb-3 course-card">
+          <div class="course-img" style="background:linear-gradient(135deg,#ffc107,#ffdb4d);height:120px">
+            <i class="bi bi-bar-chart" style="font-size:2rem"></i>
+          </div>
+          <div class="card-body">
+            <h6 class="mb-1">SaaS Growth & Scaling Strategies</h6>
+            <div class="d-flex justify-content-between align-items-center">
+              <span style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733; <small class="text-muted-custom">4.9</small></span>
+              <span class="fw-bold text-brand">$99.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-custom course-card">
+          <div class="course-img" style="background:linear-gradient(135deg,#805ad5,#b794f4);height:120px">
+            <i class="bi bi-graph-up-arrow" style="font-size:2rem"></i>
+          </div>
+          <div class="card-body">
+            <h6 class="mb-1">Data-Driven Product Analytics</h6>
+            <div class="d-flex justify-content-between align-items-center">
+              <span style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733; <small class="text-muted-custom">4.8</small></span>
+              <span class="fw-bold text-brand">$74.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <h5>Hub<span style="color:var(--brand-primary)">Flow</span></h5>
+        <p class="small">Empowering businesses with modern SaaS tools to grow, manage, and scale effortlessly.</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+          <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+          <a href="#"><i class="bi bi-github fs-5"></i></a>
+          <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="about.html">About Us</a></li>
+          <li class="mb-2"><a href="services.html">Services</a></li>
+          <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+          <li class="mb-2"><a href="blog.html">Blog</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Support</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#">Help Center</a></li>
+          <li class="mb-2"><a href="#">Documentation</a></li>
+          <li class="mb-2"><a href="#">API Reference</a></li>
+          <li class="mb-2"><a href="#">Status Page</a></li>
+          <li class="mb-2"><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5>Newsletter</h5>
+        <p class="small">Stay updated with our latest features and releases.</p>
+        <form class="d-flex gap-2">
+          <input type="email" class="form-control form-control-sm" placeholder="Your email">
+          <button type="button" class="btn btn-brand btn-sm">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p class="small mb-0">&copy; 2026 HubFlow. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

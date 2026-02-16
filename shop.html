@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - HubFlow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Hub<span>Flow</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <i class="bi bi-list fs-4" style="color:var(--text-primary)"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+              <li><a class="dropdown-item" href="community.html">Community</a></li>
+              <li><a class="dropdown-item" href="client-portal.html">Client Portal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+          <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+          <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><a class="navbar-brand" href="index.html">Hub<span>Flow</span></a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+        <li class="nav-item"><a class="nav-link" href="client-portal.html">Client Portal</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+      </ul>
+      <div class="d-flex gap-2 mt-3">
+        <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+        <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+        <button class="theme-toggle" id="themeToggleMobile"><i class="bi bi-moon-fill"
+            id="themeIconMobile"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Shop</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Shop</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <div class="card-custom filter-sidebar">
+            <div class="card-body">
+              <h5 class="mb-3">Filters</h5>
+
+              <h6 class="mb-2">Categories</h6>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="catSoftware" unchecked>
+                <label class="form-check-label" for="catSoftware">Software</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="catHardware">
+                <label class="form-check-label" for="catHardware">Hardware</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="catTemplates">
+                <label class="form-check-label" for="catTemplates">Templates</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="catPlugins">
+                <label class="form-check-label" for="catPlugins">Plugins</label>
+              </div>
+
+              <hr style="border-color:var(--border-color)">
+
+              <h6 class="mb-2">Price Range</h6>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="price" id="priceAll" checked>
+                <label class="form-check-label" for="priceAll">All Prices</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="price" id="price1">
+                <label class="form-check-label" for="price1">Under $25</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="price" id="price2">
+                <label class="form-check-label" for="price2">$25 - $50</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="radio" name="price" id="price3">
+                <label class="form-check-label" for="price3">$50 - $100</label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="price" id="price4">
+                <label class="form-check-label" for="price4">$100+</label>
+              </div>
+
+              <hr style="border-color:var(--border-color)">
+
+              <h6 class="mb-2">Rating</h6>
+              <div class="mb-2"><a href="#" style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733;</a> <small
+                  class="text-muted-custom">& Up</small></div>
+              <div class="mb-2"><a href="#" style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;</a><span
+                  style="color:var(--text-muted)">&#9733;</span> <small class="text-muted-custom">& Up</small></div>
+              <div class="mb-2"><a href="#" style="color:#ffc107">&#9733;&#9733;&#9733;</a><span
+                  style="color:var(--text-muted)">&#9733;&#9733;</span> <small class="text-muted-custom">& Up</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <p class="mb-0 text-muted-custom">Showing 6 of 42 products</p>
+            <select class="form-select form-select-sm" style="width:auto">
+              <option>Sort by: Featured</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest First</option>
+              <option>Best Rating</option>
+            </select>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-4">
+              <div class="card-custom product-card" data-category="Software" data-price="79">
+                <div class="product-img"><i class="bi bi-box-seam"></i></div>
+                <div class="card-body">
+                  <h6 class="mb-1">CRM Pro Suite</h6>
+                  <div class="mb-1" style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733; <small
+                      class="text-muted-custom">(128)</small></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-brand fs-5">$79.00</span>
+                    <button class="btn btn-brand btn-sm"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card-custom product-card" data-category="Software" data-price="49">
+                <div class="product-img"><i class="bi bi-laptop"></i></div>
+                <div class="card-body">
+                  <h6 class="mb-1">Analytics Dashboard</h6>
+                  <div class="mb-1" style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;<span
+                      style="color:var(--text-muted)">&#9733;</span> <small class="text-muted-custom">(86)</small></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-brand fs-5">$49.00</span>
+                    <button class="btn btn-brand btn-sm"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card-custom product-card" data-category="Templates" data-price="29">
+                <div class="product-img"><i class="bi bi-palette"></i></div>
+                <div class="card-body">
+                  <h6 class="mb-1">Email Template Pack</h6>
+                  <div class="mb-1" style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733; <small
+                      class="text-muted-custom">(214)</small></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-brand fs-5">$29.00</span>
+                    <button class="btn btn-brand btn-sm"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card-custom product-card" data-category="Plugins" data-price="39">
+                <div class="product-img"><i class="bi bi-plug"></i></div>
+                <div class="card-body">
+                  <h6 class="mb-1">API Integration Plugin</h6>
+                  <div class="mb-1" style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;<span
+                      style="color:var(--text-muted)">&#9733;</span> <small class="text-muted-custom">(65)</small></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-brand fs-5">$39.00</span>
+                    <button class="btn btn-brand btn-sm"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card-custom product-card" data-category="Software" data-price="99">
+                <div class="product-img"><i class="bi bi-shield-check"></i></div>
+                <div class="card-body">
+                  <h6 class="mb-1">Security Toolkit</h6>
+                  <div class="mb-1" style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;&#9733; <small
+                      class="text-muted-custom">(173)</small></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-brand fs-5">$99.00</span>
+                    <button class="btn btn-brand btn-sm"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card-custom product-card" data-category="Software" data-price="59">
+                <div class="product-img"><i class="bi bi-cloud-arrow-up"></i></div>
+                <div class="card-body">
+                  <h6 class="mb-1">Cloud Backup Manager</h6>
+                  <div class="mb-1" style="color:#ffc107">&#9733;&#9733;&#9733;&#9733;<span
+                      style="color:var(--text-muted)">&#9733;</span> <small class="text-muted-custom">(92)</small></div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-brand fs-5">$59.00</span>
+                    <button class="btn btn-brand btn-sm"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-custom mt-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h5 class="mb-1"><i class="bi bi-cart3 me-2 text-brand"></i>Cart Summary</h5>
+                  <p class="mb-0 text-muted-custom">3 items in your cart</p>
+                </div>
+                <div class="text-end">
+                  <p class="mb-1 small text-muted-custom">Subtotal</p>
+                  <h4 class="mb-0 text-brand">$247.00</h4>
+                </div>
+              </div>
+              <hr style="border-color:var(--border-color)">
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="text-muted-custom small">View Cart Details</a>
+                <button class="btn btn-brand"><i class="bi bi-bag-check me-1"></i>Checkout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5>Hub<span style="color:var(--brand-primary)">Flow</span></h5>
+          <p class="small">Empowering businesses with modern SaaS tools to grow, manage, and scale effortlessly.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+            <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+            <a href="#"><i class="bi bi-github fs-5"></i></a>
+            <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="services.html">Services</a></li>
+            <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+            <li class="mb-2"><a href="blog.html">Blog</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Help Center</a></li>
+            <li class="mb-2"><a href="#">Documentation</a></li>
+            <li class="mb-2"><a href="#">API Reference</a></li>
+            <li class="mb-2"><a href="#">Status Page</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Newsletter</h5>
+          <p class="small">Stay updated with our latest features and releases.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control form-control-sm" placeholder="Your email">
+            <button type="button" class="btn btn-brand btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p class="small mb-0">&copy; 2026 HubFlow. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
