@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,369 +9,411 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Hub<span>Flow</span></a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-      <i class="bi bi-list fs-4" style="color:var(--text-primary)"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
-            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about.html">About</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
-            <li><a class="dropdown-item" href="shop.html">Shop</a></li>
-            <li><a class="dropdown-item" href="courses.html">Courses</a></li>
-            <li><a class="dropdown-item" href="community.html">Community</a></li>
-            <li><a class="dropdown-item" href="client-portal.html">Client Portal</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-          </ul>
-        </li>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Hub<span>Flow</span></a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <i class="bi bi-list fs-4" style="color:var(--text-primary)"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- Home -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+
+          <!-- Products -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+              <li><a class="dropdown-item" href="community.html">Community</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+            </ul>
+          </li>
+
+          <!-- Blog -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <!-- Client Portal (Top Level) -->
+          <li class="nav-item">
+            <a class="nav-link" href="client-portal.html">Client Portal</a>
+          </li>
+
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+          <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><a class="navbar-brand" href="index.html">Hub<span>Flow</span></a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
         <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
       </ul>
-      <div class="d-flex align-items-center gap-2">
+      <div class="d-flex gap-2 mt-3">
         <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
         <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
-        <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+        <button class="theme-toggle" id="themeToggleMobile"><i class="bi bi-moon-fill"
+            id="themeIconMobile"></i></button>
       </div>
     </div>
   </div>
-</nav>
-<div class="offcanvas offcanvas-end" id="mobileMenu">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title"><a class="navbar-brand" href="index.html">Hub<span>Flow</span></a></h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
-      <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
-      <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-      <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-      <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
-      <li class="nav-item"><a class="nav-link" href="client-portal.html">Client Portal</a></li>
-      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-      <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-      <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
-    </ul>
-    <div class="d-flex gap-2 mt-3">
-      <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
-      <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
-      <button class="theme-toggle" id="themeToggleMobile"><i class="bi bi-moon-fill" id="themeIconMobile"></i></button>
-    </div>
-  </div>
-</div>
 
-<section class="page-header">
-  <div class="container">
-    <h1>About Us</h1>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">About</li>
-      </ol>
-    </nav>
-  </div>
-</section>
+  <section class="page-header py-5">
+    <div class="container text-center">
+      <h1 class="fw-bold">About</h1>
 
-<section class="section-padding">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6">
-        <span class="badge bg-brand-light text-brand fw-semibold mb-3">Our Mission</span>
-        <h2 class="section-title">Helping Businesses Grow Better</h2>
-        <p class="text-muted-custom">Founded in 2018, HubFlow was born from a simple idea: businesses shouldn't need a dozen disconnected tools to manage their growth. We set out to build an all-in-one platform that brings marketing, sales, service, and operations together in one seamless experience.</p>
-        <p class="text-muted-custom">Today, over 10,000 companies in 120+ countries rely on HubFlow to attract new customers, close more deals, and deliver exceptional service. Our mission is to make powerful business tools accessible to companies of all sizes — from startups to enterprises.</p>
-      </div>
-      <div class="col-lg-6">
-        <div style="background: linear-gradient(135deg, rgba(255,92,53,0.08), rgba(0,189,165,0.08)); border-radius: 1rem; padding: 4rem 2rem; text-align: center;">
-          <i class="bi bi-bullseye fs-1 text-brand"></i>
-          <p class="mt-2 text-muted-custom small">Our Mission</p>
-        </div>
-      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-decoration-none">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">About </li>
+        </ol>
+      </nav>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-padding" style="background-color: var(--bg-secondary);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Our Core Values</h2>
-      <p class="section-subtitle">The principles that guide everything we do at HubFlow.</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-3 col-md-6">
-        <div class="card-custom h-100">
-          <div class="card-body text-center">
-            <div class="icon-box primary mx-auto"><i class="bi bi-heart"></i></div>
-            <h5>Customer First</h5>
-            <p class="text-muted-custom small">Every decision we make starts with the customer. Their success is our success, and we're committed to delivering exceptional value at every touchpoint.</p>
-          </div>
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-stretch g-5">
+        <div class="col-lg-6">
+          <span class="badge bg-brand-light text-brand fw-semibold mb-3">Our Mission</span>
+          <h2 class="section-title">Helping Businesses Grow Better</h2>
+          <p class="text-muted-custom">Founded in 2018, HubFlow was born from a simple idea: businesses shouldn't need a
+            dozen disconnected tools to manage their growth. We set out to build an all-in-one platform that brings
+            marketing, sales, service, and operations together in one seamless experience.</p>
+          <p class="text-muted-custom">Today, over 10,000 companies in 120+ countries rely on HubFlow to attract new
+            customers, close more deals, and deliver exceptional service. Our mission is to make powerful business tools
+            accessible to companies of all sizes — from startups to enterprises.</p>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card-custom h-100">
-          <div class="card-body text-center">
-            <div class="icon-box secondary mx-auto"><i class="bi bi-lightbulb"></i></div>
-            <h5>Innovation</h5>
-            <p class="text-muted-custom small">We constantly push boundaries to build better tools. Our R&D team invests heavily in AI and machine learning to stay ahead of the curve.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card-custom h-100">
-          <div class="card-body text-center">
-            <div class="icon-box info mx-auto"><i class="bi bi-shield-check"></i></div>
-            <h5>Trust & Security</h5>
-            <p class="text-muted-custom small">We take data protection seriously. SOC 2 certified with enterprise-grade security, so your business data is always safe and compliant.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card-custom h-100">
-          <div class="card-body text-center">
-            <div class="icon-box warning mx-auto"><i class="bi bi-people"></i></div>
-            <h5>Collaboration</h5>
-            <p class="text-muted-custom small">Great things happen when teams work together. We build tools that break down silos and foster collaboration across departments.</p>
+        <div class="col-lg-6 d-flex">
+          <div class="w-100 rounded-4 overflow-hidden shadow-lg" style="min-height: 100%;">
+            <img src="assets/images/our-mission.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Our Mission">
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-padding">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Meet Our Leadership</h2>
-      <p class="section-subtitle">The experienced team driving HubFlow's vision and growth.</p>
-    </div>
-    <div class="row g-4 justify-content-center">
-      <div class="col-lg-3 col-md-6">
-        <div class="card-custom text-center">
-          <div class="card-body">
-            <div class="avatar avatar-lg mx-auto mb-3">AK</div>
-            <h5 class="mb-1">Alex Kim</h5>
-            <p class="text-muted-custom small mb-2">Co-Founder & CEO</p>
-            <p class="text-muted-custom small">Former VP of Engineering at Salesforce. 15+ years in enterprise SaaS. Passionate about democratizing business technology.</p>
-            <div class="d-flex justify-content-center gap-2 mt-2">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
+  <section class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Core Values</h2>
+        <p class="section-subtitle">The principles that guide everything we do at HubFlow.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="card-custom h-100">
+            <div class="card-body text-center">
+              <div class="icon-box primary mx-auto"><i class="bi bi-heart"></i></div>
+              <h5>Customer First</h5>
+              <p class="text-muted-custom small">Every decision we make starts with the customer. Their success is our
+                success, and we're committed to delivering exceptional value at every touchpoint.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card-custom text-center">
-          <div class="card-body">
-            <div class="avatar avatar-lg mx-auto mb-3">SP</div>
-            <h5 class="mb-1">Sarah Patel</h5>
-            <p class="text-muted-custom small mb-2">Co-Founder & CTO</p>
-            <p class="text-muted-custom small">Previously led platform engineering at Stripe. Expert in distributed systems and cloud infrastructure at scale.</p>
-            <div class="d-flex justify-content-center gap-2 mt-2">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-custom h-100">
+            <div class="card-body text-center">
+              <div class="icon-box secondary mx-auto"><i class="bi bi-lightbulb"></i></div>
+              <h5>Innovation</h5>
+              <p class="text-muted-custom small">We constantly push boundaries to build better tools. Our R&D team
+                invests heavily in AI and machine learning to stay ahead of the curve.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card-custom text-center">
-          <div class="card-body">
-            <div class="avatar avatar-lg mx-auto mb-3">JC</div>
-            <h5 class="mb-1">James Chen</h5>
-            <p class="text-muted-custom small mb-2">VP of Product</p>
-            <p class="text-muted-custom small">Product leader with experience at HubSpot and Intercom. Focused on building intuitive tools that users actually love.</p>
-            <div class="d-flex justify-content-center gap-2 mt-2">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-custom h-100">
+            <div class="card-body text-center">
+              <div class="icon-box info mx-auto"><i class="bi bi-shield-check"></i></div>
+              <h5>Trust & Security</h5>
+              <p class="text-muted-custom small">We take data protection seriously. SOC 2 certified with
+                enterprise-grade security, so your business data is always safe and compliant.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card-custom text-center">
-          <div class="card-body">
-            <div class="avatar avatar-lg mx-auto mb-3">LM</div>
-            <h5 class="mb-1">Lisa Martinez</h5>
-            <p class="text-muted-custom small mb-2">VP of Marketing</p>
-            <p class="text-muted-custom small">Growth marketing expert who scaled multiple startups to $100M+ ARR. Advocate for data-driven marketing strategies.</p>
-            <div class="d-flex justify-content-center gap-2 mt-2">
-              <a href="#"><i class="bi bi-linkedin"></i></a>
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-custom h-100">
+            <div class="card-body text-center">
+              <div class="icon-box warning mx-auto"><i class="bi bi-people"></i></div>
+              <h5>Collaboration</h5>
+              <p class="text-muted-custom small">Great things happen when teams work together. We build tools that break
+                down silos and foster collaboration across departments.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-padding" style="background-color: var(--bg-secondary);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Our Journey</h2>
-      <p class="section-subtitle">Key milestones that shaped HubFlow into what it is today.</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="d-flex mb-4">
-          <div class="me-4 text-center" style="min-width: 80px;">
-            <span class="badge bg-brand fs-6">2018</span>
-          </div>
-          <div>
-            <h5>Founded in San Francisco</h5>
-            <p class="text-muted-custom small">Alex and Sarah founded HubFlow with $2M in seed funding, launching with a basic CRM and marketing automation tool.</p>
-          </div>
-        </div>
-        <div class="d-flex mb-4">
-          <div class="me-4 text-center" style="min-width: 80px;">
-            <span class="badge bg-brand fs-6">2019</span>
-          </div>
-          <div>
-            <h5>1,000 Customers Milestone</h5>
-            <p class="text-muted-custom small">Reached 1,000 paying customers. Launched Sales Hub and raised $15M Series A led by Accel Partners.</p>
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Meet Our Leadership</h2>
+        <p class="section-subtitle">The experienced team driving HubFlow's vision and growth.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-3 col-md-6">
+          <div class="card-custom text-center">
+            <div class="card-body">
+              <img src="assets/images/team-1.jpg" class="rounded-circle mb-3" width="120" height="120" alt="Alex Kim">
+              <h5 class="mb-1">Alex Kim</h5>
+              <p class="text-muted-custom small mb-2">Co-Founder & CEO</p>
+              <p class="text-muted-custom small">Former VP of Engineering at Salesforce. 15+ years in enterprise SaaS.
+                Passionate about democratizing business.</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="d-flex mb-4">
-          <div class="me-4 text-center" style="min-width: 80px;">
-            <span class="badge bg-brand fs-6">2021</span>
-          </div>
-          <div>
-            <h5>Series B & Global Expansion</h5>
-            <p class="text-muted-custom small">Raised $50M Series B. Opened offices in London and Singapore. Launched Service Hub and Operations Hub.</p>
-          </div>
-        </div>
-        <div class="d-flex mb-4">
-          <div class="me-4 text-center" style="min-width: 80px;">
-            <span class="badge bg-brand fs-6">2023</span>
-          </div>
-          <div>
-            <h5>AI-Powered Features</h5>
-            <p class="text-muted-custom small">Introduced AI-powered analytics, predictive lead scoring, and automated content generation across all hubs.</p>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-custom text-center">
+            <div class="card-body">
+              <img src="assets/images/team-1.jpg" class="rounded-circle mb-3" width="120" height="120" alt="Alex Kim">
+              <h5 class="mb-1">Sarah Patel</h5>
+              <p class="text-muted-custom small mb-2">Co-Founder & CTO</p>
+              <p class="text-muted-custom small">Previously led platform engineering at Stripe. Expert in distributed
+                systems and cloud infrastructure at scale.</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="d-flex">
-          <div class="me-4 text-center" style="min-width: 80px;">
-            <span class="badge bg-brand fs-6">2025</span>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-custom text-center">
+            <div class="card-body">
+              <img src="assets/images/team-1.jpg" class="rounded-circle mb-3" width="120" height="120" alt="Alex Kim">
+              <h5 class="mb-1">James Chen</h5>
+              <p class="text-muted-custom small mb-2">VP of Product</p>
+              <p class="text-muted-custom small">Product leader with experience at HubSpot and Intercom. Focused on
+                building intuitive tools that users actually love.</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
           </div>
-          <div>
-            <h5>10,000+ Customers Worldwide</h5>
-            <p class="text-muted-custom small">Surpassed 10,000 customers in 120+ countries. Named a Leader in Gartner's Magic Quadrant for CRM. Team grew to 500+ employees.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card-custom text-center">
+            <div class="card-body">
+              <img src="assets/images/team-1.jpg" class="rounded-circle mb-3" width="120" height="120" alt="Alex Kim">
+              <h5 class="mb-1">Lisa Martinez</h5>
+              <p class="text-muted-custom small mb-2">VP of Marketing</p>
+              <p class="text-muted-custom small">Growth marketing expert who scaled multiple startups to $100M+ ARR.
+                Advocate for data-driven strategies.</p>
+              <div class="d-flex justify-content-center gap-2 mt-2">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section-padding">
-  <div class="container">
-    <div class="row g-4 text-center">
-      <div class="col-lg-3 col-md-6">
-        <div class="stat-card">
-          <div class="stat-number">10K+</div>
-          <div class="stat-label">Happy Customers</div>
-        </div>
+  <section class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Journey</h2>
+        <p class="section-subtitle">Key milestones that shaped HubFlow into what it is today.</p>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="stat-card">
-          <div class="stat-number">120+</div>
-          <div class="stat-label">Countries Served</div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="stat-card">
-          <div class="stat-number">500+</div>
-          <div class="stat-label">Team Members</div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="stat-card">
-          <div class="stat-number">$65M</div>
-          <div class="stat-label">Total Funding</div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="d-flex mb-4">
+            <div class="me-4 text-center" style="min-width: 80px;">
+              <span class="badge bg-brand fs-6">2018</span>
+            </div>
+            <div>
+              <h5>Founded in San Francisco</h5>
+              <p class="text-muted-custom small">Alex and Sarah founded HubFlow with $2M in seed funding, launching with
+                a basic CRM and marketing automation tool.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="me-4 text-center" style="min-width: 80px;">
+              <span class="badge bg-brand fs-6">2019</span>
+            </div>
+            <div>
+              <h5>1,000 Customers Milestone</h5>
+              <p class="text-muted-custom small">Reached 1,000 paying customers. Launched Sales Hub and raised $15M
+                Series A led by Accel Partners.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="me-4 text-center" style="min-width: 80px;">
+              <span class="badge bg-brand fs-6">2021</span>
+            </div>
+            <div>
+              <h5>Series B & Global Expansion</h5>
+              <p class="text-muted-custom small">Raised $50M Series B. Opened offices in London and Singapore. Launched
+                Service Hub and Operations Hub.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="me-4 text-center" style="min-width: 80px;">
+              <span class="badge bg-brand fs-6">2023</span>
+            </div>
+            <div>
+              <h5>AI-Powered Features</h5>
+              <p class="text-muted-custom small">Introduced AI-powered analytics, predictive lead scoring, and automated
+                content generation across all hubs.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="me-4 text-center" style="min-width: 80px;">
+              <span class="badge bg-brand fs-6">2025</span>
+            </div>
+            <div>
+              <h5>10,000+ Customers Worldwide</h5>
+              <p class="text-muted-custom small">Surpassed 10,000 customers in 120+ countries. Named a Leader in
+                Gartner's Magic Quadrant for CRM. Team grew to 500+ employees.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-3 col-md-6">
-        <h5>Hub<span style="color:var(--brand-primary)">Flow</span></h5>
-        <p class="small">Empowering businesses with modern SaaS tools to grow, manage, and scale effortlessly.</p>
-        <div class="d-flex gap-3 mt-3">
-          <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
-          <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
-          <a href="#"><i class="bi bi-github fs-5"></i></a>
-          <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-card">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-card">
+            <div class="stat-number">120+</div>
+            <div class="stat-label">Countries Served</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-card">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Team Members</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-card">
+            <div class="stat-number">$65M</div>
+            <div class="stat-label">Total Funding</div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <h5>Company</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="about.html">About Us</a></li>
-          <li class="mb-2"><a href="services.html">Services</a></li>
-          <li class="mb-2"><a href="pricing.html">Pricing</a></li>
-          <li class="mb-2"><a href="blog.html">Blog</a></li>
-          <li class="mb-2"><a href="contact.html">Contact</a></li>
-        </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5>Hub<span style="color:var(--brand-primary)">Flow</span></h5>
+          <p class="small">Empowering businesses with modern SaaS tools to grow, manage, and scale effortlessly.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+            <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+            <a href="#"><i class="bi bi-github fs-5"></i></a>
+            <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="services.html">Services</a></li>
+            <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+            <li class="mb-2"><a href="blog.html">Blog</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Help Center</a></li>
+            <li class="mb-2"><a href="#">Documentation</a></li>
+            <li class="mb-2"><a href="#">API Reference</a></li>
+            <li class="mb-2"><a href="#">Status Page</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Newsletter</h5>
+          <p class="small">Stay updated with our latest features and releases.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control form-control-sm" placeholder="Your email">
+            <button type="button" class="btn btn-brand btn-sm">Subscribe</button>
+          </form>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <h5>Support</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#">Help Center</a></li>
-          <li class="mb-2"><a href="#">Documentation</a></li>
-          <li class="mb-2"><a href="#">API Reference</a></li>
-          <li class="mb-2"><a href="#">Status Page</a></li>
-          <li class="mb-2"><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <h5>Newsletter</h5>
-        <p class="small">Stay updated with our latest features and releases.</p>
-        <form class="d-flex gap-2">
-          <input type="email" class="form-control form-control-sm" placeholder="Your email">
-          <button type="button" class="btn btn-brand btn-sm">Subscribe</button>
-        </form>
+      <div class="footer-bottom text-center">
+        <p class="small mb-0">&copy; 2026 HubFlow. All rights reserved.</p>
       </div>
     </div>
-    <div class="footer-bottom text-center">
-      <p class="small mb-0">&copy; 2026 HubFlow. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-<button class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></button>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
+  </footer>
+  <button class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

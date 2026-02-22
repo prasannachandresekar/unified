@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,302 +9,346 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Hub<span>Flow</span></a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-      <i class="bi bi-list fs-4" style="color:var(--text-primary)"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
-            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Company</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about.html">About</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
-            <li><a class="dropdown-item" href="shop.html">Shop</a></li>
-            <li><a class="dropdown-item" href="courses.html">Courses</a></li>
-            <li><a class="dropdown-item" href="community.html">Community</a></li>
-            <li><a class="dropdown-item" href="client-portal.html">Client Portal</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
-          </ul>
-        </li>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Hub<span>Flow</span></a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <i class="bi bi-list fs-4" style="color:var(--text-primary)"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- Home -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+            </ul>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+
+          <!-- Products -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bookings.html">Bookings</a></li>
+              <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+              <li><a class="dropdown-item" href="courses.html">Courses</a></li>
+              <li><a class="dropdown-item" href="community.html">Community</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+            </ul>
+          </li>
+
+          <!-- Blog -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <!-- Client Portal (Top Level) -->
+          <li class="nav-item">
+            <a class="nav-link" href="client-portal.html">Client Portal</a>
+          </li>
+
+        </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
+          <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title"><a class="navbar-brand" href="index.html">Hub<span>Flow</span></a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+        <li class="nav-item"><a class="nav-link" href="client-portal.html">Client Portal</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
       </ul>
-      <div class="d-flex align-items-center gap-2">
+      <div class="d-flex gap-2 mt-3">
         <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
         <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
-        <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+        <button class="theme-toggle" id="themeToggleMobile"><i class="bi bi-moon-fill"
+            id="themeIconMobile"></i></button>
       </div>
     </div>
   </div>
-</nav>
-<div class="offcanvas offcanvas-end" id="mobileMenu">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title"><a class="navbar-brand" href="index.html">Hub<span>Flow</span></a></h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
-      <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
-      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
-      <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-      <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-      <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
-      <li class="nav-item"><a class="nav-link" href="client-portal.html">Client Portal</a></li>
-      <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-      <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-      <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
-    </ul>
-    <div class="d-flex gap-2 mt-3">
-      <a href="login.html" class="btn btn-outline-brand btn-sm">Login</a>
-      <a href="register.html" class="btn btn-brand btn-sm">Sign Up</a>
-      <button class="theme-toggle" id="themeToggleMobile"><i class="bi bi-moon-fill" id="themeIconMobile"></i></button>
+
+  <section class="page-header py-5">
+    <div class="container text-center">
+      <h1 class="fw-bold">Pricing</h1>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="text-decoration-none">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+        </ol>
+      </nav>
+
     </div>
-  </div>
-</div>
+  </section>
 
-<section class="page-header">
-  <div class="container">
-    <h1>Pricing</h1>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Pricing</li>
-      </ol>
-    </nav>
-  </div>
-</section>
-
-<section class="section-padding">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Simple, Transparent Pricing</h2>
-      <p class="section-subtitle">No hidden fees. No surprises. Cancel anytime.</p>
-      <div class="d-flex align-items-center justify-content-center gap-3 mt-4">
-        <span class="fw-semibold" style="color: var(--text-primary);">Monthly</span>
-        <div class="form-check form-switch mb-0">
-          <input class="form-check-input" type="checkbox" role="switch" id="billingToggle" style="width:3rem;height:1.5rem;cursor:pointer;">
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">No hidden fees. No surprises. Cancel anytime.</p>
+        <div class="d-flex align-items-center justify-content-center gap-3 mt-4">
+          <span class="fw-semibold" style="color: var(--text-primary);">Monthly</span>
+          <div class="form-check form-switch mb-0">
+            <input class="form-check-input" type="checkbox" role="switch" id="billingToggle"
+              style="width:3rem;height:1.5rem;cursor:pointer;">
+          </div>
+          <span class="fw-semibold" style="color: var(--text-secondary);">Annual <span
+              class="badge bg-brand-light text-brand ms-1">Save 20%</span></span>
         </div>
-        <span class="fw-semibold" style="color: var(--text-secondary);">Annual <span class="badge bg-brand-light text-brand ms-1">Save 20%</span></span>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="pricing-card h-100">
+            <h5 class="fw-bold mb-1">Starter</h5>
+            <p class="text-muted-custom small mb-3">Perfect for small teams getting started</p>
+            <div class="price mb-3">$29<span>/mo</span></div>
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>5 Users</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>10GB Storage</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Email Support</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Basic Analytics</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>1 Project</li>
+              <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>API Access</li>
+              <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>SSO</li>
+              <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>Custom Integrations</li>
+            </ul>
+            <a href="register.html" class="btn btn-outline-brand w-100">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="pricing-card featured h-100">
+            <h5 class="fw-bold mb-1">Professional</h5>
+            <p class="text-muted-custom small mb-3">Best for growing businesses</p>
+            <div class="price mb-3">$79<span>/mo</span></div>
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>25 Users</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>100GB Storage</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Priority Support</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Advanced Analytics</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>10 Projects</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>API Access</li>
+              <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>SSO</li>
+              <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>Custom Integrations</li>
+            </ul>
+            <a href="register.html" class="btn btn-brand w-100">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="pricing-card h-100">
+            <h5 class="fw-bold mb-1">Enterprise</h5>
+            <p class="text-muted-custom small mb-3">For large organizations at scale</p>
+            <div class="price mb-3">$199<span>/mo</span></div>
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited Users</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited Storage</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Dedicated Support</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Custom Analytics</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited Projects</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>API Access</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>SSO</li>
+              <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Custom Integrations</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-brand w-100">Contact Sales</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row g-4 justify-content-center">
-      <div class="col-lg-4 col-md-6">
-        <div class="pricing-card h-100">
-          <h5 class="fw-bold mb-1">Starter</h5>
-          <p class="text-muted-custom small mb-3">Perfect for small teams getting started</p>
-          <div class="price mb-3">$29<span>/mo</span></div>
-          <ul class="list-unstyled text-start mb-4">
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>5 Users</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>10GB Storage</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Email Support</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Basic Analytics</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>1 Project</li>
-            <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>API Access</li>
-            <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>SSO</li>
-            <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>Custom Integrations</li>
+  </section>
+
+  <section class="section-padding" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find answers to common questions about our pricing and plans</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="pricingFAQ">
+            <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                  style="background-color:var(--bg-card);color:var(--text-primary);">
+                  Can I switch plans at any time?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFAQ">
+                <div class="accordion-body" style="color:var(--text-secondary);">
+                  Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the
+                  prorated difference for the remainder of your billing cycle. When downgrading, the new rate takes
+                  effect at the start of your next billing period.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2" style="background-color:var(--bg-card);color:var(--text-primary);">
+                  Is there a free trial available?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                <div class="accordion-body" style="color:var(--text-secondary);">
+                  Absolutely! All plans come with a 14-day free trial with full access to all features. No credit card
+                  is required to start your trial. You can explore everything HubFlow has to offer before making a
+                  commitment.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3" style="background-color:var(--bg-card);color:var(--text-primary);">
+                  What payment methods do you accept?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                <div class="accordion-body" style="color:var(--text-secondary);">
+                  We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and bank transfers for
+                  annual Enterprise plans. All payments are processed securely through our PCI-compliant payment
+                  infrastructure.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq4" style="background-color:var(--bg-card);color:var(--text-primary);">
+                  Do you offer discounts for nonprofits or startups?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                <div class="accordion-body" style="color:var(--text-secondary);">
+                  Yes, we offer special pricing for qualified nonprofits, educational institutions, and early-stage
+                  startups. Contact our sales team to learn more about our discount programs and eligibility
+                  requirements.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq5" style="background-color:var(--bg-card);color:var(--text-primary);">
+                  What happens when I exceed my plan limits?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                <div class="accordion-body" style="color:var(--text-secondary);">
+                  We'll notify you when you're approaching your plan limits. You won't experience any service
+                  interruption — instead, we'll recommend an upgrade path that best suits your growing needs. You can
+                  also add extra capacity as needed without changing plans.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="mb-3">Start Your Free Trial Today</h2>
+      <p class="mb-4" style="opacity:0.9;">Join 10,000+ businesses already using HubFlow. No credit card required.</p>
+      <a href="register.html" class="btn btn-lg px-5">Get Started Free</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5>Hub<span style="color:var(--brand-primary)">Flow</span></h5>
+          <p class="small">Empowering businesses with modern SaaS tools to grow, manage, and scale effortlessly.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+            <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+            <a href="#"><i class="bi bi-github fs-5"></i></a>
+            <a href="#"><i class="bi bi-youtube fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="about.html">About Us</a></li>
+            <li class="mb-2"><a href="services.html">Services</a></li>
+            <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+            <li class="mb-2"><a href="blog.html">Blog</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
           </ul>
-          <a href="register.html" class="btn btn-outline-brand w-100">Get Started</a>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="pricing-card featured h-100">
-          <h5 class="fw-bold mb-1">Professional</h5>
-          <p class="text-muted-custom small mb-3">Best for growing businesses</p>
-          <div class="price mb-3">$79<span>/mo</span></div>
-          <ul class="list-unstyled text-start mb-4">
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>25 Users</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>100GB Storage</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Priority Support</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Advanced Analytics</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>10 Projects</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>API Access</li>
-            <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>SSO</li>
-            <li class="mb-2 text-muted-custom"><i class="bi bi-x-circle me-2"></i>Custom Integrations</li>
+        <div class="col-lg-3 col-md-6">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Help Center</a></li>
+            <li class="mb-2"><a href="#">Documentation</a></li>
+            <li class="mb-2"><a href="#">API Reference</a></li>
+            <li class="mb-2"><a href="#">Status Page</a></li>
+            <li class="mb-2"><a href="#">Privacy Policy</a></li>
           </ul>
-          <a href="register.html" class="btn btn-brand w-100">Get Started</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Newsletter</h5>
+          <p class="small">Stay updated with our latest features and releases.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control form-control-sm" placeholder="Your email">
+            <button type="button" class="btn btn-brand btn-sm">Subscribe</button>
+          </form>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="pricing-card h-100">
-          <h5 class="fw-bold mb-1">Enterprise</h5>
-          <p class="text-muted-custom small mb-3">For large organizations at scale</p>
-          <div class="price mb-3">$199<span>/mo</span></div>
-          <ul class="list-unstyled text-start mb-4">
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited Users</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited Storage</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Dedicated Support</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Custom Analytics</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Unlimited Projects</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>API Access</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>SSO</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Custom Integrations</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-brand w-100">Contact Sales</a>
-        </div>
+      <div class="footer-bottom text-center">
+        <p class="small mb-0">&copy; 2026 HubFlow. All rights reserved.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section-padding" style="background-color: var(--bg-secondary);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-subtitle">Find answers to common questions about our pricing and plans</p>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="accordion" id="pricingFAQ">
-          <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="background-color:var(--bg-card);color:var(--text-primary);">
-                Can I switch plans at any time?
-              </button>
-            </h2>
-            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFAQ">
-              <div class="accordion-body" style="color:var(--text-secondary);">
-                Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference for the remainder of your billing cycle. When downgrading, the new rate takes effect at the start of your next billing period.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="background-color:var(--bg-card);color:var(--text-primary);">
-                Is there a free trial available?
-              </button>
-            </h2>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
-              <div class="accordion-body" style="color:var(--text-secondary);">
-                Absolutely! All plans come with a 14-day free trial with full access to all features. No credit card is required to start your trial. You can explore everything HubFlow has to offer before making a commitment.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="background-color:var(--bg-card);color:var(--text-primary);">
-                What payment methods do you accept?
-              </button>
-            </h2>
-            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
-              <div class="accordion-body" style="color:var(--text-secondary);">
-                We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and bank transfers for annual Enterprise plans. All payments are processed securely through our PCI-compliant payment infrastructure.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" style="background-color:var(--bg-card);color:var(--text-primary);">
-                Do you offer discounts for nonprofits or startups?
-              </button>
-            </h2>
-            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
-              <div class="accordion-body" style="color:var(--text-secondary);">
-                Yes, we offer special pricing for qualified nonprofits, educational institutions, and early-stage startups. Contact our sales team to learn more about our discount programs and eligibility requirements.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item" style="background-color:var(--bg-card);border-color:var(--border-color);">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" style="background-color:var(--bg-card);color:var(--text-primary);">
-                What happens when I exceed my plan limits?
-              </button>
-            </h2>
-            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
-              <div class="accordion-body" style="color:var(--text-secondary);">
-                We'll notify you when you're approaching your plan limits. You won't experience any service interruption — instead, we'll recommend an upgrade path that best suits your growing needs. You can also add extra capacity as needed without changing plans.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-section">
-  <div class="container text-center">
-    <h2 class="mb-3">Start Your Free Trial Today</h2>
-    <p class="mb-4" style="opacity:0.9;">Join 10,000+ businesses already using HubFlow. No credit card required.</p>
-    <a href="register.html" class="btn btn-lg px-5">Get Started Free</a>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-3 col-md-6">
-        <h5>Hub<span style="color:var(--brand-primary)">Flow</span></h5>
-        <p class="small">Empowering businesses with modern SaaS tools to grow, manage, and scale effortlessly.</p>
-        <div class="d-flex gap-3 mt-3">
-          <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
-          <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
-          <a href="#"><i class="bi bi-github fs-5"></i></a>
-          <a href="#"><i class="bi bi-youtube fs-5"></i></a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <h5>Company</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="about.html">About Us</a></li>
-          <li class="mb-2"><a href="services.html">Services</a></li>
-          <li class="mb-2"><a href="pricing.html">Pricing</a></li>
-          <li class="mb-2"><a href="blog.html">Blog</a></li>
-          <li class="mb-2"><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <h5>Support</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="#">Help Center</a></li>
-          <li class="mb-2"><a href="#">Documentation</a></li>
-          <li class="mb-2"><a href="#">API Reference</a></li>
-          <li class="mb-2"><a href="#">Status Page</a></li>
-          <li class="mb-2"><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <h5>Newsletter</h5>
-        <p class="small">Stay updated with our latest features and releases.</p>
-        <form class="d-flex gap-2">
-          <input type="email" class="form-control form-control-sm" placeholder="Your email">
-          <button type="button" class="btn btn-brand btn-sm">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom text-center">
-      <p class="small mb-0">&copy; 2026 HubFlow. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-<button class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></button>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
+  </footer>
+  <button class="back-to-top" id="backToTop"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

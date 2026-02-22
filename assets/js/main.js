@@ -1,56 +1,79 @@
 (function () {
-  const theme = localStorage.getItem('hubflow-theme') || 'light';
-  document.documentElement.setAttribute('data-theme', theme);
 
   document.addEventListener('DOMContentLoaded', function () {
+
     const toggleBtn = document.getElementById('themeToggle');
-    const toggleIcon = document.getElementById('themeIcon');
     const mobileToggleBtn = document.getElementById('themeToggleMobile');
+    const toggleIcon = document.getElementById('themeIcon');
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('hubflow-theme') || 'light';
+
+    function applyTheme(mode) {
+      document.documentElement.setAttribute('data-theme', mode);
+      document.documentElement.setAttribute('data-bs-theme', mode);
+    }
 
     function updateIcon() {
       const current = document.documentElement.getAttribute('data-theme');
-      if (toggleIcon) toggleIcon.className = current === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
-      const mi = document.getElementById('themeIconMobile');
-      if (mi) mi.className = current === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+      if (toggleIcon) {
+        toggleIcon.className = current === 'dark'
+          ? 'bi bi-sun-fill'
+          : 'bi bi-moon-fill';
+      }
+
+      const mobileIcon = document.getElementById('themeIconMobile');
+      if (mobileIcon) {
+        mobileIcon.className = current === 'dark'
+          ? 'bi bi-sun-fill'
+          : 'bi bi-moon-fill';
+      }
     }
 
     function toggleTheme() {
-      const current = document.documentElement.getAttribute('data-theme');
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
       const next = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
+
+      applyTheme(next);
       localStorage.setItem('hubflow-theme', next);
       updateIcon();
     }
 
-    if (toggleBtn) toggleBtn.addEventListener('click', toggleTheme);
-    if (mobileToggleBtn) mobileToggleBtn.addEventListener('click', toggleTheme);
+    // Apply saved theme on page load
+    applyTheme(savedTheme);
     updateIcon();
 
-    const backToTop = document.getElementById('backToTop');
-    if (backToTop) {
-      window.addEventListener('scroll', function () {
-        if (window.scrollY > 300) {
-          backToTop.classList.add('show');
-        } else {
-          backToTop.classList.remove('show');
-        }
-      });
-      backToTop.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
+    if (toggleBtn) toggleBtn.addEventListener('click', toggleTheme);
+    if (mobileToggleBtn) mobileToggleBtn.addEventListener('click', toggleTheme);
 
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.navbar .nav-link, .navbar .dropdown-item').forEach(function (link) {
-      const href = link.getAttribute('href');
-      if (href === currentPage) {
-        link.classList.add('active');
-        const parent = link.closest('.dropdown');
-        if (parent) parent.querySelector('.nav-link').classList.add('active');
-      }
-    });
   });
+
 })();
+
+const backToTop = document.getElementById('backToTop');
+if (backToTop) {
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 300) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
+  backToTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.navbar .nav-link, .navbar .dropdown-item').forEach(function (link) {
+  const href = link.getAttribute('href');
+  if (href === currentPage) {
+    link.classList.add('active');
+    const parent = link.closest('.dropdown');
+    if (parent) parent.querySelector('.nav-link').classList.add('active');
+  }
+});
+;
 /* =========================
    SHOP FILTERS
 ========================= */

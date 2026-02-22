@@ -206,7 +206,45 @@ h6 {
 }
 
 .section-padding {
-  padding: 5rem 0;
+  padding: 60px 0;
+}
+
+.dashboard-box {
+  background: linear-gradient(135deg, rgba(0, 189, 165, 0.08), rgba(255, 92, 53, 0.08));
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 420px;
+  /* fixed consistent height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  height: 180px;
+  overflow: hidden;
+}
+
+.product-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-img {
+  height: 180px;
+  overflow: hidden;
+}
+
+.course-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.dashboard-box img {
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .card-custom {
@@ -217,6 +255,7 @@ h6 {
   transition: all 0.3s;
   overflow: hidden;
 }
+
 
 .card-custom:hover {
   box-shadow: var(--shadow-md);
@@ -738,4 +777,48 @@ footer .footer-bottom {
 
 [data-theme="dark"] .avatar-circle {
   background: rgba(255, 255, 255, 0.12);
+}
+
+/* ===== Bootstrap Utility Fix for Dark Mode ===== */
+
+[data-theme="dark"] .text-dark {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .text-muted {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .bg-light,
+[data-theme="dark"] .bg-white {
+  background-color: var(--bg-card) !important;
+}
+
+[data-theme="dark"] .table-light {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .breadcrumb-item.active {
+  color: var(--text-secondary) !important;
+}
+
+/* ===== Fix Form Controls in Dark Mode ===== */
+
+[data-theme="dark"] .form-control {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .form-control::placeholder {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
+[data-theme="dark"] .form-control:focus {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--brand-primary);
+  box-shadow: none;
 }
