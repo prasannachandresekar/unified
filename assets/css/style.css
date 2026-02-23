@@ -822,3 +822,13 @@ footer .footer-bottom {
   border-color: var(--brand-primary);
   box-shadow: none;
 }
+
+
+
+.blog-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
