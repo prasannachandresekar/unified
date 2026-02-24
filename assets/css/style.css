@@ -569,7 +569,6 @@ footer .footer-bottom {
 .sidebar {
   background-color: var(--sidebar-bg);
   border-right: 1px solid var(--border-color);
-  min-height: calc(100vh - 76px);
   padding: 1.5rem 0;
   transition: background-color 0.3s;
 }
@@ -895,4 +894,19 @@ footer .footer-bottom {
 .social-icons a:hover i {
   color: var(--brand-primary);
   transform: scale(1.1);
+}
+
+.section-padding .row {
+  align-items: flex-start;
+}
+
+.sidebar-card {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+}
+
+.dashboard-wrapper {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
 }
