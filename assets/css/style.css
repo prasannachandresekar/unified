@@ -85,40 +85,77 @@ h6 {
 .navbar-brand {
   font-weight: 800;
   font-size: 1.5rem;
-  color: var(--brand-primary) !important;
 }
 
-.navbar-brand span {
-  color: var(--text-primary);
+/* Brand Logo Styling */
+.brand-logo {
+  font-weight: 700;
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: var(--brand-primary);
+  display: inline-block;
+}
+
+.brand-logo:hover,
+.brand-logo:focus {
+  color: var(--brand-primary);
+  text-decoration: none;
 }
 
 .nav-link {
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
   font-weight: 500;
   font-size: 0.95rem;
   padding: 0.5rem 1rem !important;
 }
 
 .nav-link:hover {
-  color: var(--brand-primary) !important;
+  color: var(--brand-primary);
 }
 
-.dropdown-menu {
+.navbar .nav-link.active {
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropdown-menu {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-md);
-  border-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  right: auto;
+  min-width: auto;
+  width: max-content;
+  padding: 0.5rem 0;
+  border-radius: 10px;
 }
 
-.dropdown-item {
+.navbar .dropdown-item {
   color: var(--text-primary);
-  font-size: 0.9rem;
-  padding: 0.5rem 1.25rem;
+  white-space: nowrap;
+  padding: 0.4rem 1rem;
+  font-size: 0.95rem;
 }
 
-.dropdown-item:hover {
+.navbar .dropdown-item:hover {
   background-color: var(--bg-secondary);
   color: var(--brand-primary);
+}
+
+.navbar .dropdown-item.active {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+}
+
+.navbar .dropdown-item.active:hover {
+  background-color: var(--brand-primary);
+  color: #ffffff;
 }
 
 .btn-brand {
@@ -254,6 +291,7 @@ h6 {
   box-shadow: var(--shadow-sm);
   transition: all 0.3s;
   overflow: hidden;
+  height: 100%;
 }
 
 
@@ -450,6 +488,16 @@ footer a {
 
 footer a:hover {
   color: #fff;
+}
+
+footer .bi {
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+footer a:hover .bi {
+  color: var(--brand-primary);
 }
 
 footer .footer-bottom {
@@ -831,4 +879,18 @@ footer .footer-bottom {
   object-fit: cover;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+
+.stars {
+  display: block;
+}
+
+.social-icons i {
+  color: var(--text-secondary);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover i {
+  color: var(--brand-primary);
+  transform: scale(1.1);
 }
