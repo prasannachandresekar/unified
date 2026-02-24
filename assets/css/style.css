@@ -99,7 +99,8 @@ h6 {
 
 .brand-logo:hover,
 .brand-logo:focus {
-  color: var(--brand-primary);
+  color: var(--brand-primary-hover);
+  opacity: 0.9;
   text-decoration: none;
 }
 
@@ -284,7 +285,8 @@ h6 {
   border-radius: 1rem;
 }
 
-.card-custom {
+.card-custom,
+.sidebar-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 0.75rem;
